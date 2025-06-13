@@ -10,7 +10,7 @@ title: Hauptseite
 
 … Android-App-Updates direkt von der Quelle erhalten
 
-Das Hauptziel von Obtainium ist es, den Prozess des Herunterladens und Installierens von Android-App-Updates direkt von ihren „Quell“-Websites (Websites, auf denen App-Dateien zum direkten Download verfügbar sind) zu automatisieren. Dieser Prozess muss automatisiert werden, da die Benutzer möglicherweise nicht bereit oder in der Lage sind, sich auf einen App-Store zu verlassen, um eine bestimmte App zu aktualisieren, aber Android-Apps (im Gegensatz zu PC-Apps) in der Regel davon ausgehen, dass sie extern durch einen App- Store aktualisiert werden, und verfügen daher nicht über eine eingebaute Selbstaktualisierungsfunktion.
+Das Hauptziel von Obtainium ist es, den Prozess des Herunterladens und Installierens von Android-App-Updates direkt von ihren „Quell“-Websites (Websites, auf denen App-Dateien zum direkten Download verfügbar sind) zu automatisieren. Dieser Prozess muss automatisiert werden, da die Benutzer möglicherweise nicht bereit oder in der Lage sind, sich auf einen App-Store zu verlassen, um eine bestimmte App zu aktualisieren, aber Android-Apps (im Gegensatz zu PC-Apps) in der Regel davon ausgehen, dass sie extern durch einen App-Store aktualisiert werden, und verfügen daher nicht über eine eingebaute Selbstaktualisierungsfunktion.
 
 Dieses Konzept ist zwar einfach, aber die große Vielfalt an unterstützten Quellen, Benutzereinstellungen und APK-Benennungs-, Versions- und Verteilungsmethoden machen die Dinge komplizierter. Dieses Wiki erklärt die verschiedenen in Obtainium verfügbaren App-Quellen und Einstellungen. Es ist nicht vollständig und möglicherweise nicht auf dem neuesten Stand.
 
