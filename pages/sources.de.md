@@ -1,23 +1,24 @@
 ---
-title: App Sources
-description: Information specific to certain sources
+title: App-Quellen
+description: Informationen spezifisch für einzelne Quellen
 ---
 
-# App Sources
+# App-Quellen
 
-The way that an app is added, checked for updates, and installs will vary depending on source and the settings configured for that app by the user.
+Die Art und Weise, wie eine App hinzugefügt, auf Aktualisierungen geprüft und installiert wird, hängt von der Quelle und den vom Benutzer für diese App konfigurierten Einstellungen ab.
 
-The following options are available for all apps regardless of source:
+Die folgenden Optionen sind für alle Anwendungen unabhängig von der Quelle
+verfügbar:
 
-- Track-Only: Enabling this toggle allows you to receive update notifications for apps without attempting to actually download their APKs. This is useful to track updates for apps where no APKs are available, or where they cannot easily be extracted by Obtainium. Some sources are exclusively track-only - for example [ApkMirror](#apkmirror). Note that [version detection](app_tracking.md/#version-detection) will not work for any apps added as track-only.
-- Version Detection: See the section on [version detection](app_tracking.md/#version-detection).
-- Filter APKs by Regular Expression: When more than one APK is available for an app release, the user is prompted to pick one manually. Aside from being inconvenient, this means the app will not be updated silently in the background even when doing so would have otherwise been possible. This option lets the user specify a regular expression that can be used to filter out APK that don't match it (ideally down to one option).
-- Attempt to filter APKs by CPU architecture if possible: This toggle will tell Obtainium to automatically filter out any APKs that don't appear to be compatible with the user's device. The logic used to do this is very simple and is based on the APK filename, so it is not always reliable and the user may still need to do their own filtering in many cases.
-- App Name: This allows the user to specify their own name for the app instead of using the one Obtainium extracts.
-- Exempt from background updates: This toggle will prevent the app from being updated silently in the background even if background updates are enabled and this app would otherwise have fulfilled all criteria to be updated in the background.
-- Skip update notifications: This toggle tells Obtainium to avoid notifying the user that this app has an update available or that it was updated in the background.
+- **Nur nachverfolgen**: Wenn Sie diese Option aktivieren, können Sie Aktualisierungsbenachrichtigungen für Apps erhalten, ohne zu versuchen, deren APKs herunterzuladen. Dies ist nützlich, um Updates für Apps zu verfolgen, für die keine APKs verfügbar sind oder die nicht einfach von Obtainium extrahiert werden können. Einige Quellen sind ausschließlich zum nachverfolgen – zum Beispiel [ApkMirror](#apkmirror). Beachten Sie, dass die [Versionserkennung](app_tracking.md/#version-detection) nicht für Apps funktioniert, die als „Nur nachverfolgen“ hinzugefügt wurden.
+- **APKs nach regulären Ausdrücken filtern**: Wenn mehr als eine APK für eine App-Veröffentlichung verfügbar ist, wird der Benutzer aufgefordert, eine manuell auszuwählen. Dies ist nicht nur unbequem, sondern bedeutet auch, dass die App nicht im Hintergrund aktualisiert wird, auch wenn dies sonst möglich gewesen wäre. Mit dieser Option kann der Benutzer einen regulären Ausdruck angeben, mit dem die APKs herausgefiltert werden können, die nicht erwünscht sind (idealerweise bis hin zu einer Option).
+- **Regulären Ausdruck invertieren (APKs nach regulärem Ausdruck filtern)**: Mit dieser Option, kann der reguläre Ausdruck invertiert werden, sodass im regulären Ausdruck die gesuchte APK angegeben werden kann.
+- **Nach Möglichkeit versuchen, APKs nach CPU-Architektur zu filtern**: Mit dieser Option wird Obtainium angewiesen, automatisch alle APKs herauszufiltern, die nicht mit dem Gerät des Benutzers kompatibel zu sein scheinen. Die dafür verwendete Logik ist sehr einfach und basiert auf dem APK-Dateinamen. Sie ist daher nicht immer zuverlässig und der Benutzer muss in vielen Fällen immer noch selbst filtern.
+- **App-Name**: Hier kann der Benutzer seinen eigenen Namen für die App angeben, anstatt den von Obtainium extrahierten zu nutzen.
+- **Von Hintergrundaktualisierungen (falls aktiviert) ausschließen**: Mit dieser Option wird verhindert, dass die Anwendung im Hintergrund aktualisiert wird, selbst wenn Hintergrundaktualisierungen aktiviert sind und die Anwendung ansonsten alle Kriterien für eine Aktualisierung im Hintergrund erfüllt hätte.
+- **Update-Benachrichtigungen vermeiden**: Mit dieser Option wird Obtainium angewiesen, den Benutzer nicht zu benachrichtigen, dass für diese App ein Update verfügbar ist oder dass sie im Hintergrund aktualisiert wurde.
 
-Aside from those, each app has additional source-specific options. Most of those are self-explanatory and may be updated frequently, so they are not covered in this Wiki. However, some sources do have more unique behaviours that need more explanation, and these are covered below.
+Abgesehen davon hat jede Anwendung zusätzliche quellenspezifische Optionen. Die meisten dieser Optionen sind selbsterklärend und werden häufig aktualisiert, so dass sie in diesem Wiki nicht behandelt werden. Einige Quellen haben jedoch einzigartige Verhaltensweisen, die einer genaueren Erläuterung bedürfen und die im Folgenden behandelt werden.
 
 ## Currently supported App sources
 
@@ -46,8 +47,12 @@ Aside from those, each app has additional source-specific options. Most of those
 
 ## GitHub
 
-GitHub puts a cap on the number of API requests you can make in a given period of time. Since Obtainium uses the GitHub API to grab release info, you may run into a "rate limit" error if you have more than a few dozen GitHub apps. You can get around this by getting a Personal Access Token.
+GitHub legt eine Obergrenze für die Anzahl der API-Anfragen fest, die Sie innerhalb eines bestimmten Zeitraums stellen können. Da Obtainium die GitHub-API nutzt, um Versionsinformationen abzurufen, kann es zu einem "Rate Limit"-Fehler kommen, wenn Sie mehr als ein paar Dutzend GitHub-Apps haben. Sie
+können dies umgehen, indem Sie ein [persönliches Zugriffstoken](https://docs.github.com/de/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) von GitHub erhalten und es in den Einstellungen von Obtainium speichern (das Token sollte
+nur die minimale Leseberechtigung benötigen).
 
-GitHub also allows developers to host multiple releases of their app. This usually means older versions of the same app, but may also include pre-releases, variants, etc. - so Obtainium provides various filters that let you navigate this and grab the exact releases you are interested in.
+GitHub ermöglicht es Entwicklern auch, mehrere Versionen ihrer Anwendung zu hosten. Dies bedeutet in der Regel ältere Versionen derselben Anwendung, kann aber auch Vorabversionen, Varianten usw. umfassen. - Obtainium bietet daher verschiedene Filter, mit denen Sie durch diese navigieren und genau die Versionen auswählen können, an denen Sie interessiert sind
 
-- Some sources (like APKPure) may provide [XAPK files](https://apkpure.com/xapk.html) instead of APK files. Obtainium's XAPK support is incomplete and may not work reliably.
+## XAPK-Support
+
+Einige Quellen (wie APKPure) bieten möglicherweise [XAPK-Dateien] (https://apkpure.com/xapk.html) anstelle von APK-Dateien an. Die XAPK-Unterstützung von Obtainium ist unvollständig und funktioniert möglicherweise nicht zuverlässig.
