@@ -24,7 +24,7 @@ Bei der Eingabe der Quell-URL erkennt Obtainium automatisch, welche [Quellenlogi
 Bei den meisten Quellen müssen Sie die URL nicht genau angeben. Die GitHub-Quelle akzeptiert beispielsweise jede GitHub-URL, die die Basis-URL des Projektarchivs enthält (z.B. `https://github.com/ImranR98/Obtainium/releases/latest` wird automatisch auf `https://github.com/ImranR98/Obtainium` gekürzt). Ihre URL muss jedoch präziser sein in zwei Situationen:
 
 1. Bei Verwendung der HTML-Quelle
-      - Zum Beispiel ist die Tor Android APK unter `https://www.torproject.org/download/´ zu finden, also würde die Eingabe von `https://www.torproject.org/´ nicht funktionieren.
+      - Zum Beispiel ist die Tor Android APK unter `https://www.torproject.org/download/` zu finden, also würde die Eingabe von `https://www.torproject.org/` nicht funktionieren.
 2. Bei der manuellen Auswahl einer Quelle (die die HTML-Fallback-Auswahl von Obtainium außer Kraft setzt)
 
 Auf dieser Seite können Sie auch nach Apps in allen Quellen suchen, die diese Funktion unterstützen (die Registerkarte [Import/Export](ui_overview.de.md/#„Import/Export“-Registerkarte) bietet auch ein separates Suchwerkzeug). Nur weil eine App in den Suchergebnissen auftaucht, heißt das nicht, dass sie erfolgreich hinzugefügt wird – sie muss noch alle anderen Kriterien erfüllen.
