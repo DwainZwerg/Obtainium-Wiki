@@ -10,18 +10,14 @@ title: Hauptseite
 
 … Android-App-Updates direkt von der Quelle erhalten
 
-Das Hauptziel von Obtainium ist es, den Prozess des Herunterladens und Installierens von Android-App-Updates direkt von ihren „Quell“-Websites (Websites, auf denen App-Dateien zum direkten Download verfügbar sind) zu automatisieren. Dieser Prozess muss automatisiert werden, da die Benutzer möglicherweise nicht bereit oder in der Lage sind, sich auf einen App-Store zu verlassen, um eine bestimmte App zu aktualisieren, aber Android-Apps (im Gegensatz zu PC-Apps) gehen in der Regel davon aus, dass sie extern durch einen App- Store aktualisiert werden, und verfügen daher nicht über eine eingebaute Selbstaktualisierungsfunktion.
+Das Hauptziel von Obtainium ist es, den Prozess des Herunterladens und Installierens von Android-App-Updates direkt von ihren „Quell“-Websites (Websites, auf denen App-Dateien zum direkten Download verfügbar sind) zu automatisieren. Dieser Prozess muss automatisiert werden, da die Benutzer möglicherweise nicht bereit oder in der Lage sind, sich auf einen App-Store zu verlassen, um eine bestimmte App zu aktualisieren, aber Android-Apps (im Gegensatz zu PC-Apps) in der Regel davon ausgehen, dass sie extern durch einen App- Store aktualisiert werden, und verfügen daher nicht über eine eingebaute Selbstaktualisierungsfunktion.
 
 Dieses Konzept ist zwar einfach, aber die große Vielfalt an unterstützten Quellen, Benutzereinstellungen und APK-Benennungs-, Versions- und Verteilungsmethoden machen die Dinge komplizierter. Dieses Wiki erklärt die verschiedenen in Obtainium verfügbaren App-Quellen und Einstellungen. Es ist nicht vollständig und möglicherweise nicht auf dem neuesten Stand.
 
 
 ## App-Konfigurationen finden
 
-Von der Gemeinschaft erstellte App-Konfigurationen finden Sie unter [apps.obtainium.imranr.dev](https://apps.obtainium.imranr.dev).
-
-Wenn Sie die Konfiguration für eine gewünschte Anwendung nicht finden können, können Sie eine Anfrage auf der [Diskussionsseite](https://github.com/ImranR98/apps.obtainium.imranr.dev/discussions/new?category=app-requests) stellen.
-
-Oder tragen Sie einige Konfigurationen zur Website bei, indem Sie einen Pull-Request bei [diesem Repo](https://github.com/ImranR98/apps.obtainium.imranr.dev) erstellen.
+Von der Gemeinschaft erstellte App-Konfigurationen finden Sie unter [apps.obtainium.imranr.dev](https://apps.obtainium.imranr.dev). Wenn Sie die Konfiguration für eine gewünschte Anwendung nicht finden können, können Sie eine Anfrage im zugehörigen [Diskussionsreiter](https://github.com/ImranR98/apps.obtainium.imranr.dev/discussions/new?category=app-requests) stellen oder Sie tragen selbst eigene Konfigurationen zur Website bei, indem Sie einen Pull-Request in [diesem Repository](https://github.com/ImranR98/apps.obtainium.imranr.dev) erstellen.
 
 ## Installation
 
@@ -44,4 +40,4 @@ Oder tragen Sie einige Konfigurationen zur Website bei, indem Sie einen Pull-Req
     - [PGP Public Key](https://keyserver.ubuntu.com/pks/lookup?search=contact%40imranr.dev&fingerprint=on&op=index) (um APK-Hashes zu überprüfen)
 
 ## Limitierungen
-- Bei einigen Quellen werden die Daten mit Hilfe von Web Scraping gesammelt und die Konfifguration können aufgrund von Änderungen am Design der Website leicht beschädigt werden. In solchen Fällen sind zuverlässigere Methoden nicht verfügbar.
+- Bei einigen Quellen werden die Daten mit Hilfe von Web Scraping gesammelt und die Konfigurationen können aufgrund von Änderungen am Design der Website leicht beschädigt werden. In solchen Fällen sind zuverlässigere Methoden nicht verfügbar.
