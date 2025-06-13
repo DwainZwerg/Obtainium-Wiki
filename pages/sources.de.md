@@ -7,8 +7,7 @@ description: Informationen spezifisch für einzelne Quellen
 
 Die Art und Weise, wie eine App hinzugefügt, auf Aktualisierungen geprüft und installiert wird, hängt von der Quelle und den vom Benutzer für diese App konfigurierten Einstellungen ab.
 
-Die folgenden Optionen sind für alle Anwendungen unabhängig von der Quelle
-verfügbar:
+Die folgenden Optionen sind für alle Anwendungen unabhängig von der Quelle verfügbar:
 
 - **Nur nachverfolgen**: Wenn Sie diese Option aktivieren, können Sie Aktualisierungsbenachrichtigungen für Apps erhalten, ohne zu versuchen, deren APKs herunterzuladen. Dies ist nützlich, um Updates für Apps zu verfolgen, für die keine APKs verfügbar sind oder die nicht einfach von Obtainium extrahiert werden können. Einige Quellen sind ausschließlich zum nachverfolgen – zum Beispiel [ApkMirror](#apkmirror). Beachten Sie, dass die [Versionserkennung](app_tracking.de.md/#version-detection) nicht für Apps funktioniert, die als „Nur nachverfolgen“ hinzugefügt wurden.
 - **APKs nach regulären Ausdrücken filtern**: Wenn mehr als eine APK für eine App-Veröffentlichung verfügbar ist, wird der Benutzer aufgefordert, eine manuell auszuwählen. Dies ist nicht nur unbequem, sondern bedeutet auch, dass die App nicht im Hintergrund aktualisiert wird, auch wenn dies sonst möglich gewesen wäre. Mit dieser Option kann der Benutzer einen regulären Ausdruck angeben, mit dem die APKs herausgefiltert werden können, die nicht erwünscht sind (idealerweise bis hin zu einer Option).
