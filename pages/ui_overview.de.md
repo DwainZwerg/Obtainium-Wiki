@@ -27,7 +27,7 @@ Bei den meisten Quellen müssen Sie die URL nicht genau angeben. Die GitHub-Quel
       - Zum Beispiel ist die Tor Android APK unter ´https://www.torproject.org/download/` zu finden, also würde die Eingabe von ´https://www.torproject.org/` nicht funktionieren.
 2. Bei der manuellen Auswahl einer Quelle (die die HTML-Fallback-Auswahl von Obtainium außer Kraft setzt)
 
-Auf dieser Seite können Sie auch nach Apps in allen Quellen suchen, die diese Funktion unterstützen (die Registerkarte [Import/Export](„Import/Export“-Registerkarte) bietet auch ein separates Suchwerkzeug). Nur weil eine App in den Suchergebnissen auftaucht, heißt das nicht, dass sie erfolgreich hinzugefügt wird – sie muss noch alle anderen Kriterien erfüllen.
+Auf dieser Seite können Sie auch nach Apps in allen Quellen suchen, die diese Funktion unterstützen (die Registerkarte [Import/Export](ui_overview.de.md/#„Import/Export“-Registerkarte) bietet auch ein separates Suchwerkzeug). Nur weil eine App in den Suchergebnissen auftaucht, heißt das nicht, dass sie erfolgreich hinzugefügt wird – sie muss noch alle anderen Kriterien erfüllen.
 
 Schließlich werden auf dieser Seite alle unterstützten Quellen aufgelistet, zusammen mit zusätzlichen Informationen, z. B. ob eine Quelle durchsuchbar ist.
 
